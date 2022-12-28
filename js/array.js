@@ -26,3 +26,10 @@ function doubleIndex (array){
   }
 }
 console.log(doubleIndex (numbers));
+
+// 5 Вивести лише парні елементи (парні числа діляться на 2 без залишку).
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] % 2 === 0) {
+    console.log(`doubleNumbers [${i}] = ${numbers[i]}`);
+  }
+}
