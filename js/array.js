@@ -9,3 +9,6 @@ numbers.push(99); //додати елемент до кінця
 numbers.pop(); // Видалити останній елемент
 numbers.shift(); // Видалити початковий елемент
 numbers.unshift(26);
+
+// 2. Вивести розмір масиву.
+console.log("numbers.len :>> ", numbers.length);
