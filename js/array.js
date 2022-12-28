@@ -33,3 +33,14 @@ for (let i = 0; i < numbers.length; i++) {
     console.log(`doubleNumbers [${i}] = ${numbers[i]}`);
   }
 }
+
+// 6 Вивести індекси нульових елементів (елемент дорівнює нулю).
+
+function zeroNumber(array){
+  for (let i=0; i<array.length; i++){
+    if(array[i] === 0) {
+      console.log(`${i} елемент дорівнює нулю`);
+    }
+  }
+}
+console.log(zeroNumber(numbers));
