@@ -16,3 +16,13 @@ console.log("numbers.len :>> ", numbers.length);
 // 3. Зробити копію масиву.
 const coppyArray = numbers.slice();
 console.log("coppyArray :>> ", coppyArray);
+
+// 4 Вивести елементи з парними індексами.
+function doubleIndex (array){
+  for (let i=0; i<array.length; i++){
+    if(i%2 === 0) {
+      console.log(`doubleIndex [${i}] = ${array[i]}`);
+    }
+  }
+}
+console.log(doubleIndex (numbers));
