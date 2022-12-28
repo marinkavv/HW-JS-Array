@@ -12,3 +12,7 @@ numbers.unshift(26);
 
 // 2. Вивести розмір масиву.
 console.log("numbers.len :>> ", numbers.length);
+
+// 3. Зробити копію масиву.
+const coppyArray = numbers.slice();
+console.log("coppyArray :>> ", coppyArray);
