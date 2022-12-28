@@ -17,6 +17,7 @@ console.log("numbers.len :>> ", numbers.length);
 const coppyArray = numbers.slice();
 console.log("coppyArray :>> ", coppyArray);
 
+// Не використовувати методи перебору масивів (forEach, filter, map, findIndex), а використати цикли
 // 4 Вивести елементи з парними індексами.
 function doubleIndex (array){
   for (let i=0; i<array.length; i++){
@@ -44,3 +45,15 @@ function zeroNumber(array){
   }
 }
 console.log(zeroNumber(numbers));
+
+// Методи перебору масивів (forEach, filter, map, findIndex, *some, *every).
+
+// 8 Отримати новий масив із заданого, який міститиме лише ненульові числа (-1, 5, 0, 9, -10 => -1, 5, 9, -10).
+const zero = [-1, 5, 0, 9, -10];
+
+function noZero(item) {
+  return item !== 0;
+}
+
+const noZeroArray = zero.filter(noZero);
+console.log('Містить лише ненульові числа :>> ', noZeroArray);
