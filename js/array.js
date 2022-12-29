@@ -1,6 +1,6 @@
 // 0. Створити числовий масив та проініціалізувати його (*випадковими числами).
 
-const numbers = [15, 13, 56, 89, 10, 12, 0, 75, 36, 28, 96, 0, 49];
+const numbers = [15, 13, 56, -2, 89, 10, 12, 0, 75, 36, 28, 96, 0, 49, -3];
 console.log("numbers :>> ", numbers);
 
 // 1. Видалити останній і початковий елемент з масиву, додати елемент до початку і кінця.
@@ -22,7 +22,7 @@ console.log("coppyArray :>> ", coppyArray);
 function doubleIndex (array){
   for (let i=0; i<array.length; i++){
     if(i%2 === 0) {
-      console.log(`doubleIndex [${i}] = ${array[i]}`);
+      console.log(`елемент з парним індексом [${i}] = ${array[i]}`);
     }
   }
 }
@@ -31,7 +31,7 @@ console.log(doubleIndex (numbers));
 // 5 Вивести лише парні елементи (парні числа діляться на 2 без залишку).
 for (let i = 0; i < numbers.length; i++) {
   if (numbers[i] % 2 === 0) {
-    console.log(`doubleNumbers [${i}] = ${numbers[i]}`);
+    console.log(`парний елемент [${i}] = ${numbers[i]}`);
   }
 }
 
@@ -88,3 +88,22 @@ console.log('індекс елемента, квадрат якого дорів
 if(arr5 === -1){
   console.log('елемента, квадрат якого дорівнює 100, не існує');
 }
+
+// 12 *Перевірити, чи всі елементи масиву є парними числами (* або простими числами).
+function doubleNumber(item){
+  if (item % 2 == 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+arr7 = numbers.every(doubleNumber);
+console.log(arr7);
+
+// 13 *Перевірити, чи є у масиві бодай один від'ємний елемент.
+function negativeNumber(item){
+  return item < 0;
+}
+arr8 = numbers.some(negativeNumber);
+console.log('чи є у масиві бодай один відємний елемент :>> ', arr8);
