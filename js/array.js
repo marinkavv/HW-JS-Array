@@ -57,3 +57,14 @@ function noZero(item) {
 
 const noZeroArray = zero.filter(noZero);
 console.log('Містить лише ненульові числа :>> ', noZeroArray);
+
+// 9 Отримати новий масив їх заданого, який міститиме всі елементи вихідного, поділені на 100 (99, 5, 0, 9, 30 => 0.99, 0.05, 0, 0.09, 0.3).
+
+const arr = [99, 5, 0, 9, 30];
+
+function dividedBy100(item){
+  return item/100;
+}
+
+arr2 = arr.map(dividedBy100);
+console.log('number divided by 100 :>> ', arr2);
